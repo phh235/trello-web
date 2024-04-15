@@ -36,7 +36,6 @@ function BoardBar() {
       gap: 2,
       overflowX: 'auto',
       bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#34495e' : '#1976d2'),
-      borderBottom: '1px solid #fff',
       '&::-webkit-scrollbar-track': { m: 2 }
     }}>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
@@ -73,12 +72,13 @@ function BoardBar() {
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         <Button
-          variant="outlined"
+          variant="text"
           startIcon={<PersonAddIcon />}
           sx={{
+            width: '100px',
             color: 'white',
-            borderColor: 'white',
-            '&:hover': { borderColor: 'white' }
+            bgcolor: '#ffffff3d',
+            '&:hover': { bgcolor: '#ffffff3d' }
           }}
         >
           Invite
